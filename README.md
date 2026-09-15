@@ -120,6 +120,8 @@ Run all tests from the repository root:
 python -m pytest tests/
 ```
 
+A local verification of the implemented logic/test suite completed successfully with **13 passing tests**. The final cloned repository should still be tested once more in the submission environment after dependencies are installed.
+
 Coverage includes:
 - successful listing search
 - zero-result search
@@ -220,5 +222,6 @@ I revised the implementation to add `session["adjustments"]` and two controlled 
 - [x] Retry/fallback stretch feature implemented
 - [x] Pytest tests added
 - [x] README documents tools, loop, state, errors, reflection, and AI usage
-- [ ] Run `python -m pytest tests/` in the final development environment and confirm all tests pass
+- [x] Local logic/test-suite verification completed (13 tests passed)
+- [ ] Run `python -m pytest tests/` once more after cloning/installing dependencies in the final submission environment
 - [ ] Record and link the 3–5 minute demo video
