@@ -2,6 +2,9 @@
 
 ⏰ ~8–9 hours total
 
+> **Brief synchronization note (September 22, 2026):** This repository copy is aligned to the course brief supplied for the current FitFindr submission. The implementation-facing requirements are reflected in `planning.md`, and the graded submission evidence is organized in `README.md`.
+
+
 Thrifting is not just a way to shop — it's a whole process. You're searching across multiple platforms, trying to picture how something fits with what you already own, figuring out if the price is actually good, and ultimately deciding whether it's worth it. That process involves a lot of searching, comparing, and reasoning that could be significantly more useful with the right tools.
 
 In this project, you'll build **FitFindr**: a multi-tool AI agent that helps users find secondhand pieces and figure out how to wear them. The agent orchestrates a set of tools in response to a natural language request — searching listings, evaluating fit against an existing wardrobe, and generating a shareable outfit description — while handling the messy reality of what happens when a tool fails or returns nothing useful.
