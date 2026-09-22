@@ -4,6 +4,20 @@ FitFindr is a multi-tool AI agent for secondhand fashion. A user describes a thr
 
 The full course brief is preserved in [`ASSIGNMENT.md`](./ASSIGNMENT.md), and the implementation spec/architecture is in [`planning.md`](./planning.md).
 
+## Rubric Alignment
+
+This repository is organized around the current **32-point FitFindr brief (25 required + 7 stretch)**. The main graded artifacts are:
+
+- `README.md`: tool inventory, planning-loop logic, state management, error handling, spec reflection, and at least two specific AI-usage examples.
+- `planning.md` (**4 pts**): implementation-ready tool specs, conditional planning/state design, error-handling table, text-based Mermaid architecture diagram, milestone-by-milestone AI Tool Plan, and a complete interaction walkthrough.
+- Source code: the three required tools in `tools.py`, the conditional agent/state flow in `agent.py`, and the Gradio handler in `app.py`.
+- `tests/`: isolated tool tests plus planning/state branch tests, run with `python -m pytest tests/`.
+- Demo video (**3–5 minutes**): must show all three tools in one complete workflow, explain state passing, and trigger at least one graceful failure.
+
+The implemented stretch feature is **retry logic with fallback**: when a constrained search returns nothing, FitFindr relaxes constraints in a controlled order and tells the user what changed.
+
+---
+
 ## Demo Video
 
 **Demo link:** _Add the 3–5 minute demo video URL here before submission._
