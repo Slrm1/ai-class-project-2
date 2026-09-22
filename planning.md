@@ -164,6 +164,14 @@ flowchart TD
 
 ## AI Tool Plan
 
+### Milestone 1 — Explore the starter repo
+
+I will use **ChatGPT** to help check my understanding after I inspect the starter files myself. I will provide 5–10 sample records from `data/listings.json`, the structure from `data/wardrobe_schema.json`, and the public interfaces in `utils/data_loader.py`. I expect a short description of the listing fields, the difference between `get_example_wardrobe()` and `get_empty_wardrobe()`, and a trace of the example request through the three required tools. I will verify the response directly against the source files before adding the final 2–3 sentence interaction description to this document.
+
+### Milestone 2 — Write the implementation spec
+
+I will use **ChatGPT** as a spec reviewer. I will provide the Tools, Planning Loop, State Management, Error Handling, and Architecture sections from this file and ask it to identify vague inputs, outputs, branches, or state transitions. I expect implementation-ready wording rather than code. I will verify that every required function has exact parameter names/types and return behavior, the diagram is text-based Mermaid, the error path stops before later tools, and the walkthrough names exact tool inputs and state updates.
+
 ### Milestone 3 — Individual tool implementations
 
 I will use **ChatGPT**. For `search_listings`, I will provide the Tool 1 section of this document plus the actual `load_listings()` helper and ask for an implementation that preserves the exact starter signature, applies size/price filters, calculates text relevance, returns the original listing dictionaries, and returns `[]` for no matches. I will verify it with a normal graphic-tee query, an impossible query, and a strict price query.
@@ -181,6 +189,14 @@ I will give **ChatGPT** the Planning Loop, State Management, Error Handling, and
 For `app.py`, I will provide the session field definitions and the starter TODO. I will verify that blank input is handled, the correct wardrobe helper is selected, agent errors appear in the first output panel, and a successful selected item is formatted with title, price, platform, size, condition, and any retry adjustments.
 
 Before accepting generated code, I will compare each function signature against this spec and run `python -m pytest tests/` plus the `agent.py` happy-path/no-results examples.
+
+### Milestone 5 — Deliberately test failures
+
+I will use **ChatGPT** to review the failure test matrix, not to assume the failures work. I will provide the Error Handling table and the three required terminal scenarios: impossible search, empty wardrobe, and empty outfit. I expect concrete assertions for each case and suggestions for any missing branch coverage. I will verify the behavior by intentionally triggering each case and confirming that no unhandled exception occurs, the message is actionable, and later tools are skipped when search has no usable result.
+
+### Milestone 6 — Documentation and demo
+
+I will use **ChatGPT** as a rubric checker for `README.md` and as a demo-outline assistant. I will provide the final README, this planning document, and the assignment checklist. I expect it to flag any mismatch between documented signatures and actual code and produce a 3–5 minute narration outline covering the happy path, state passing, and one failure path. I will verify the README against the actual function signatures and run the app end-to-end before recording. The video URL itself will be added manually to the README after recording.
 
 ---
 
