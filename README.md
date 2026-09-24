@@ -20,9 +20,9 @@ The implemented stretch feature is **retry logic with fallback**: when a constra
 
 ## Demo Video
 
-**Demo link:** _Add the 3–5 minute demo video URL here before submission._
+**Demo:** [FitFindr demo video](./demo/20260924-0004-02.1414167.mp4)
 
-The demo should show one complete happy-path interaction, state passing between all three required tools, and at least one triggered failure/retry path.
+The recording shows one complete happy-path interaction, state passing between all three required tools, and a triggered failure/retry path.
 
 ---
 
@@ -238,4 +238,4 @@ I revised the implementation to add `session["adjustments"]` and two controlled 
 - [x] README documents tools, loop, state, errors, reflection, and AI usage
 - [x] Local logic/test-suite verification completed (13 tests passed)
 - [ ] Run `python -m pytest tests/` once more after cloning/installing dependencies in the final submission environment
-- [ ] Record and link the 3–5 minute demo video
+- [x] Record and link the 3–5 minute demo video
